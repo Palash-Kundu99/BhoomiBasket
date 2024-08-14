@@ -1,0 +1,402 @@
+.pt-5.pb-5 {
+    background: linear-gradient(to right, #4c824e, #f5f5f5); /* Greenish to whiteish gradient */
+     
+}
+.col-lg-6.mt-5.mt-lg-0 {
+    position: relative;
+    border: 5px solid #4c824e; /* Border color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    overflow: hidden; /* Keep content within rounded corners */
+    animation: wave 3s ease-in-out infinite; /* Apply the waving animation */
+}
+
+@keyframes wave {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-5px) translateY(-5px) rotate(-1deg); }
+    60% { transform: translateX(5px) translateY(5px) rotate(1deg); }
+    95% { transform: translateX(-5px) translateY(-5px) rotate(-1deg); }
+    100% { transform: translateX(0) translateY(0); }
+}
+
+
+
+.footer {
+   
+    position: relative; /* Ensure correct positioning for the clip-path */
+   
+    color: #000000; /* Dark text color for readability */
+    overflow: hidden; /* Hide any overflow from the clip-path */
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(12, 60, 16, 0.5); /* Subtle shadow for depth */
+}
+
+.bg-light.py-3.py-md-5.py-xl-8.border-top.border-light-subtle{
+    background: linear-gradient(to right, #d5e8d5, #d5e8d5);
+
+}
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Carousel styles */
+.hero-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-carousel .item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.2; /* Less opacity for background images */
+}
+
+/* Content styles */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke; /* White text color for high contrast */
+    text-align: center;
+    z-index: 10; /* Ensure content is above images */
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* Ensures text color is white */
+    text-shadow: 
+        0 0 5px rgba(16, 16, 16, 0.8), /* White glow */
+        0 0 10px rgba(0, 0, 0, 0.6), /* Stronger white glow */
+        0 0 15px rgba(25, 24, 24, 0.4); /* Deep white glow */
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Ensures text color is white */
+    text-shadow: 
+        0 0 5px rgba(16, 16, 16, 0.8), /* White glow */
+        0 0 10px rgba(0, 0, 0, 0.6), /* Stronger white glow */
+        0 0 15px rgba(25, 24, 24, 0.4); /* Deep white glow */
+}
+
+.hero-content button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    color: #000000; /* Black text color for the button */
+    background-color: #ffffff; /* White background for the button */
+    border: 2px solid #ffffff; /* White border for the button */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* White glow */
+        0 0 10px rgba(255, 255, 255, 0.6), /* Stronger white glow */
+        0 0 15px rgba(255, 255, 255, 0.4); /* Deep white glow */
+}
+
+
+
+/* Card Styles */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a smoky effect */
+    backdrop-filter: blur(8px); /* Blurs the background behind the card */
+    transition: all 0.3s ease-in-out;
+}
+
+.card-has-bg {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 200px; /* Set a fixed height for all cards */
+    width: 100%; /* Makes sure the card width is responsive */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-meta, .card-text {
+    display: none; /* Hide elements with these classes */
+}
+
+/* Ensure images within the card are also consistent */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the card area without distortion */
+}
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Carousel styles */
+.hero-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-carousel .item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8; /* Less opacity for background images */
+}
+
+/* Content styles */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke; /* White text color for high contrast */
+    text-align: center;
+    z-index: 10; /* Ensure content is above images */
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* Ensures text color is white */
+    text-shadow: 
+        0 0 5px rgba(16, 16, 16, 0.8), /* White glow */
+        0 0 10px rgba(0, 0, 0, 0.6), /* Stronger white glow */
+        0 0 15px rgba(25, 24, 24, 0.4); /* Deep white glow */
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Ensures text color is white */
+    text-shadow: 
+        0 0 5px rgba(16, 16, 16, 0.8), /* White glow */
+        0 0 10px rgba(0, 0, 0, 0.6), /* Stronger white glow */
+        0 0 15px rgba(25, 24, 24, 0.4); /* Deep white glow */
+}
+
+.hero-content button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    color: #000000; /* Black text color for the button */
+    background-color: #ffffff; /* White background for the button */
+    border: 2px solid #ffffff; /* White border for the button */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), /* White glow */
+        0 0 10px rgba(255, 255, 255, 0.6), /* Stronger white glow */
+        0 0 15px rgba(255, 255, 255, 0.4); /* Deep white glow */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #e0e0e0; /* Light grey background on hover */
+    color: #000000; /* Black text color on hover */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a smoky effect */
+    backdrop-filter: blur(8px); /* Blurs the background behind the card */
+    transition: all 0.3s ease-in-out;
+}
+
+.card-has-bg {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 200px; /* Set a fixed height for all cards */
+    width: 100%; /* Makes sure the card width is responsive */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-meta, .card-text {
+    display: none; /* Hide elements with these classes */
+}
+
+/* Ensure images within the card are also consistent */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the card area without distortion */
+}
+/* Navigation Styles */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(6px); /* Blurs the background behind the nav */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 10px 0;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 65px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Dark text color */
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Change text color on hover */
+    text-shadow: 
+        0 0 5px rgba(0, 123, 255, 0.9), /* Light blue glow */
+        0 0 10px rgba(0, 123, 255, 0.9), /* Stronger blue glow */
+        0 0 15px rgba(0, 123, 255, 0.5); /* Deep blue glow */
+}
+.typing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text horizontally */
+    font-size: 1.25rem;
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+
+.typing-text .line {
+    display: none; /* Hide lines initially */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.typing-text .line.typing {
+    display: block; /* Show the line */
+    opacity: 1;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing-text .line.typing {
+    animation: typing 4s steps(40, end) 1s 1 normal both; /* Adjust duration and steps */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide text overflow */
+}
+/* Custom CSS for the arrow button and section */
+#featured-products {
+    position: relative;
+    padding-right: 70px; /* Extra space for the button */
+}
+
+/* Styling the arrow button */
+.arrow-btn {
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom edge */
+    right: 40px;  /* Distance from the right edge */
+    font-size: 3rem; /* Larger size for the arrow */
+    color: #007bff; /* Arrow color */
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth transition for color change */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold; /* Make the arrow thicker */
+}
+
+/* Arrow styling */
+.arrow-btn::before {
+    content: '\2192'; /* Unicode for the right arrow */
+    font-size: 7rem; /* Arrow size */
+}
+
+/* Animation for showing "Happy Healthy" */
+.arrow-btn::after {
+    content: '𝐅𝐚𝐫𝐦 𝐅𝐫𝐞𝐬𝐡 𝐆𝐨𝐨𝐝𝐧𝐞𝐬𝐬!'; /* Text to display on hover */
+    color: #1e7b17; /* Color of the text */
+    font-size: 1.2rem; /* Size of the text */
+    opacity: 0; /* Initially hidden */
+    position: absolute;
+    top: -30px; /* Position above the arrow */
+    right: 0;
+    transition: opacity 0.3s, transform 0.3s; /* Smooth transition for opacity and movement */
+    transform: translateX(20px); /* Initially shift to the right */
+    animation: jump 3s ease-in-out infinite;
+    
+}
+
+/* Show "Happy Healthy" on hover */
+.arrow-btn:hover::after {
+    opacity: 1; /* Make text visible on hover */
+    transform: translateX(0); /* Move text to its final position */
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0); /* Start at the initial position */
+    }
+    50% {
+        transform: translateY(-15px); /* Move up */
+    }
+}

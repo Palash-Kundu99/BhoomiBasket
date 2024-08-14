@@ -1,0 +1,184 @@
+body {
+    background: linear-gradient(to right, #4c824e, #f5f5f5);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #ffffff; /* Clean white background for a professional look */
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-bottom: 1px solid #e0e0e0; /* Light border for subtle separation */
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333; /* Dark text for contrast */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #0f4da9; /* Blue color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #666; /* Soft grey text for a modern look */
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 30px; /* Rounded corners for a modern touch */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffffff;
+    background-color: #0f4da9; /* Blue background on hover */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.navbar-text {
+    color: #0f4da9; /* Bright blue color for better visibility */
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: 600; /* Bold font weight for emphasis */
+    margin-right: 1.5rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: #f0f8ff; /* Light background color for contrast */
+    border-radius: 20px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+}
+.navbar .btn-danger {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0.5rem 1.25rem;
+    border-radius: 30px; /* Rounded button */
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar .btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+
+
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 2rem;
+    max-width: 600px; /* Limiting the width for better readability */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Form Header */
+.form-container h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #0f4da9; /* Consistent with the navbar color */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Input and Textarea Styles */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #0f4da9; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(15, 77, 169, 0.5); /* Subtle glow on focus */
+    outline: none;
+}
+
+/* File Input */
+.form-control[type="file"] {
+    padding: 0.35rem 0.75rem;
+}
+
+/* Textarea */
+.form-control:textarea {
+    resize: none;
+}
+
+/* Submit Button */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Header and Content Styling */
+.col-lg-8 h2,
+.col-lg-4 h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333; /* Dark text for contrast */
+}
+
+.col-lg-8 p,
+.col-lg-4 p {
+    font-size: 1rem;
+    color: #555; /* Soft grey text */
+    line-height: 1.6; /* Improved readability */
+}
+
+.col-lg-8 .btn,
+.col-lg-4 .btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    border-radius: 25px; /* Rounded button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.col-lg-4 .btn-secondary {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #333;
+}
+
+.col-lg-4 .btn-secondary:hover {
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
